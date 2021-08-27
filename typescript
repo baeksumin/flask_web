@@ -51,4 +51,17 @@ source: no such file or directory: bin
 [1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web[0m[27m[24m[J(flask_web) (base) baeksumin@baegsumin-ui-MacBookAir flask_web % [K[?2004hccode .[?2004l
 [1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web[0m[27m[24m[J(flask_web) (base) baeksumin@baegsumin-ui-MacBookAir flask_web % [K[?2004hggit init    init[?2004l
 /Users/baeksumin/apps/flask_web/.git/ 안의 기존 깃 저장소를 다시 초기화했습니다
-[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web[0m[27m[24m[J(flask_web) (base) baeksumin@baegsumin-ui-MacBookAir flask_web % [K[?2004hggig  ggit add 
+[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web[0m[27m[24m[J(flask_web) (base) baeksumin@baegsumin-ui-MacBookAir flask_web % [K[?2004hggig  ggit add .[?2004l
+[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web[0m[27m[24m[J(flask_web) (base) baeksumin@baegsumin-ui-MacBookAir flask_web % [K[?2004hggit commit -m "Fi [K[A[81C[K[1B[K[A[81C[?2004l[1B[0m[27m[24m[Jdquote> [K[?2004h[?2004l
+[0m[27m[24m[Jdquote> [K[?2004hㄹ  안ㅁ거어ㅇ          ㄴ  [?2004l
+[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web[0m[27m[24m[J(flask_web) (base) baeksumin@baegsumin-ui-MacBookAir flask_web % [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web[0m[27m[24m[J(flask_web) (base) baeksumin@baegsumin-ui-MacBookAir flask_web % [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web[0m[27m[24m[J(flask_web) (base) baeksumin@baegsumin-ui-MacBookAir flask_web % [K[?2004hㅎ  ggit comme it -m "Fi [Krrst commit"[?2004l
+[master (최상위-커밋) c01d524] First commit
+ 3 files changed, 59 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 app.py
+ create mode 100644 typescript
+[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web[0m[27m[24m[J(flask_web) (base) baeksumin@baegsumin-ui-MacBookAir flask_web % [K[?2004hㅊ  cclean[?2004l
+zsh: command not found: clean
+[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web[0m[27m[24m[J(flask_web) (base) baeksumin@baegsumin-ui-MacBookAir flask_web % [K[?2004h
