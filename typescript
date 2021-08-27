@@ -1,0 +1,54 @@
+Script started on Fri Aug 27 15:14:05 2021
+[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web[0m[27m[24m[J(base) baeksumin@baegsumin-ui-MacBookAir flask_web % [K[?2004hsscrei p  ipts[?2004l
+zsh: command not found: scripts
+[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web[0m[27m[24m[J(base) baeksumin@baegsumin-ui-MacBookAir flask_web % [K[?2004hccsc cd scrips[?2004l
+cd: no such file or directory: scrips
+[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web[0m[27m[24m[J(base) baeksumin@baegsumin-ui-MacBookAir flask_web % [K[?2004hccs c cd Scripts[?2004l
+cd: no such file or directory: Scripts
+[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web[0m[27m[24m[J(base) baeksumin@baegsumin-ui-MacBookAir flask_web % [K[?2004hllll ls[?2004l
+bin		lib		pyvenv.cfg	typescript
+[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web[0m[27m[24m[J(base) baeksumin@baegsumin-ui-MacBookAir flask_web % [K[?2004hccd typescript[?2004l
+cd: not a directory: typescript
+[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web[0m[27m[24m[J(base) baeksumin@baegsumin-ui-MacBookAir flask_web % [K[?2004hccd Scripts[?2004l
+cd: no such file or directory: Scripts
+[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web[0m[27m[24m[J(base) baeksumin@baegsumin-ui-MacBookAir flask_web % [K[?2004hㅊㄴ    ccs c cd ..[?2004l
+[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps[0m[27m[24m[J(base) baeksumin@baegsumin-ui-MacBookAir apps % [K[?2004hccd c  llsl  ccs c cd flask_web[1m/[0m[0m [?2004l
+[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web[0m[27m[24m[J(base) baeksumin@baegsumin-ui-MacBookAir flask_web % [K[?2004hcckd c cdc  lls[?2004l
+bin		lib		pyvenv.cfg	typescript
+[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web[0m[27m[24m[J(base) baeksumin@baegsumin-ui-MacBookAir flask_web % [K[?2004hlll[?2004l
+zsh: command not found: ll
+[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web[0m[27m[24m[J(base) baeksumin@baegsumin-ui-MacBookAir flask_web % [K[?2004hllsl  ㅊ  cclear[?2004l
+[H[2J[3J[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web[0m[27m[24m[J(base) baeksumin@baegsumin-ui-MacBookAir flask_web % [K[?2004hccd c  lls -a[?2004l
+.		.gitignore	lib		typescript
+..		bin		pyvenv.cfg
+[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web[0m[27m[24m[J(base) baeksumin@baegsumin-ui-MacBookAir flask_web % [K[?2004hssoure ce bin[1m/[0m[0m/activate[?2004l
+[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web[0m[27m[24m[J(flask_web) (base) baeksumin@baegsumin-ui-MacBookAir flask_web % [K[?2004hㄴ  ㄹ  ssoru  urce bin/dea           s  ccd bin[1m/[0m[0m [?2004l
+[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web/bin[0m[27m[24m[J(flask_web) (base) baeksumin@baegsumin-ui-MacBookAir bin % [K[?2004hlls[?2004l
+activate		pip-3.7			wheel
+activate.csh		pip3			wheel-3.7
+activate.fish		pip3.7			wheel3
+activate.ps1		python			wheel3.7
+activate_this.py	python3
+pip			python3.7
+[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web/bin[0m[27m[24m[J(flask_web) (base) baeksumin@baegsumin-ui-MacBookAir bin % [K[?2004ha ssource deac        s  ddeactivate[1m [0m[0m [?2004l
+[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web/bin[0m[27m[24m[J(base) baeksumin@baegsumin-ui-MacBookAir bin % [K[?2004hrrkatkgk     r  ㄴ  ccd ..[?2004l
+[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web[0m[27m[24m[J(base) baeksumin@baegsumin-ui-MacBookAir flask_web % [K[?2004hggit init[?2004l
+[33m힌트: Using 'master' as the name for the initial branch. This default branch name[m
+[33m힌트: is subject to change. To configure the initial branch name to use in all[m
+[33m힌트: of your new repositories, which will suppress this warning, call:[m
+[33m힌트: [m
+[33m힌트: 	git config --global init.defaultBranch <name>[m
+[33m힌트: [m
+[33m힌트: Names commonly chosen instead of 'master' are 'main', 'trunk' and[m
+[33m힌트: 'development'. The just-created branch can be renamed via this command:[m
+[33m힌트: [m
+[33m힌트: 	git branch -m <name>[m
+/Users/baeksumin/apps/flask_web/.git/ 안의 빈 깃 저장소를 다시 초기화했습니다
+[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web[0m[27m[24m[J(base) baeksumin@baegsumin-ui-MacBookAir flask_web % [K[?2004hggit add    g  ccode .[?2004l
+[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web[0m[27m[24m[J(base) baeksumin@baegsumin-ui-MacBookAir flask_web % [K[?2004hssource biq  in[1m/[0m[0m [?2004l
+source: no such file or directory: bin
+[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web[0m[27m[24m[J(base) baeksumin@baegsumin-ui-MacBookAir flask_web % [K[?2004hssource bin[1m/[0m[0m/s activate[?2004l
+[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web[0m[27m[24m[J(flask_web) (base) baeksumin@baegsumin-ui-MacBookAir flask_web % [K[?2004hccode .[?2004l
+[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web[0m[27m[24m[J(flask_web) (base) baeksumin@baegsumin-ui-MacBookAir flask_web % [K[?2004hggit init    init[?2004l
+/Users/baeksumin/apps/flask_web/.git/ 안의 기존 깃 저장소를 다시 초기화했습니다
+[1m[7m%[27m[1m[0m                                                                                  ]7;file://baegsumin-ui-MacBookAir.local/Users/baeksumin/apps/flask_web[0m[27m[24m[J(flask_web) (base) baeksumin@baegsumin-ui-MacBookAir flask_web % [K[?2004hggig  ggit add 
