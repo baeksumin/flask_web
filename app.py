@@ -1,5 +1,15 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect
 from data import Articles
+import pymysql
+
+
+db_connection = pymysql.connect(
+	user    = 'root',
+        passwd  = '12345678',
+    	host    = '127.0.0.1',
+    	db      = 'gangnam',
+    	charset = 'utf8'
+)
 
 app = Flask(__name__)
 
@@ -14,17 +24,35 @@ def index():
 
 @app.route('/articles', methods = ['GET', 'POST'])
 def articles():
-    list_data = Articles()
-    return render_template('articles.html', data = list_data)
+    # list_data = Articles()
+    cursor = db_connection.cursor()
+    sql = 'SELECT * FROM list;'
+    cursor.execute(sql)
+    topics = cursor.fetchall()
+    print(topics)
+
+    return render_template('articles.html', data = topics)
 
 @app.route('/detail/<ids>')
 def detail(ids):
-    list_data = Articles()
-    for data in list_data:
-        if data['id'] == int(ids):
-            article = data
-    return render_template('article.html', article = article)
+    # list_data = Articles()
+    cursor = db_connection.cursor()
+    sql = f'SELECT * FROM list WHERE id={int(ids)};'
+    cursor.execute(sql)
+    topic = cursor.fetchone()
+    print(topic)
+    # for data in list_data:
+    #     if data['id'] == int(ids):
+    #         article = data
+    return render_template('article.html', article = topic)
     
+@app.route('/delete/<ids>', methods = ['GET', 'POST'])
+def delete(ids):
+    cursor = db_connection.cursor()
+    sql = f'DELETE FROM list WHERE (id = {ids});'
+    cursor.execute(sql)
+    db_connection.commit()
+    return redirect('/articles')
 
 if __name__ == '__main__':
     app.run( debug = True )
