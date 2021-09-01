@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect
+from flask import Flask, render_template, redirect, request
 from data import Articles
 import pymysql
 
@@ -45,6 +45,24 @@ def detail(ids):
     #     if data['id'] == int(ids):
     #         article = data
     return render_template('article.html', article = topic)
+
+@app.route('/add_article', methods = ['GET', 'POST'])
+def add_article():
+    if request.method == "GET":
+        return render_template('add_article.html')
+        
+    else:
+        title = request.form["title"]
+        desc = request.form["desc"]
+        author = request.form["author"]
+
+        cursor = db_connection.cursor()
+        sql = f"INSERT INTO list (title, description, author) VALUES ('{title}', '{desc}', '{author}');"
+        cursor.execute(sql)
+        db_connection.commit()
+        return redirect('/articles')
+
+
     
 @app.route('/delete/<ids>', methods = ['GET', 'POST'])
 def delete(ids):
