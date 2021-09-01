@@ -1,7 +1,9 @@
 from flask import Flask, render_template, redirect, request
 from data import Articles
 import pymysql
+from flask_bcrypt import Bcrypt
 
+app = Flask(__name__)
 
 db_connection = pymysql.connect(
 	user    = 'root',
