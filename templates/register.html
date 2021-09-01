@@ -1,0 +1,26 @@
+    
+{% extends "layout.html" %} {% block body%}
+
+<h1>회원가입</h1>
+
+<form action="/register" , method="POST">
+
+    <div class="form-group">
+        <label for="exampleInputUsername">USERNAME</label>
+        <input type="text" class="form-control" name="username" id="exampleInputUsername"  placeholder="이름을 입력하세요">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputEmail1">EMAIL</label>
+        <input type="text" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="이메일을 입력하세요">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputPassword">PASSWORD</label>
+        <input type="password" class="form-control" name="password" id="exampleInputPassword" aria-describedby="emailHelp" placeholder="비밀번호를 입력하세요">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Sign up</button>
+</form>
+
+{% endblock %}

@@ -22,6 +22,31 @@ def index():
     name = "KIM"
     return render_template('index.html', data = name)
 
+@app.route('/register', methods = ['GET', 'POST'])
+def register():
+    if request.method == 'GET':
+        return render_template('register.html')
+
+    else:
+        username = request.form["username"]
+        email = request.form["email"]
+        password = request.form["password"]
+        cursor = db_connection.cursor()
+
+        sql_1 = f"SELECT * FROM users WHERE email = '{email}'"
+        cursor.execute(sql_1)
+        user = cursor.fetchone()
+        print(user)
+
+        if user == None:
+            sql = f"INSERT INTO users (username, email, password) VALUES ('{username}', '{email}', '{password}');"
+            cursor.execute(sql)
+            db_connection.commit()
+            return redirect('/')
+        else:
+            return redirect('/register')
+
+
 @app.route('/articles', methods = ['GET', 'POST'])
 def articles():
     # list_data = Articles()
