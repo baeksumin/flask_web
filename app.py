@@ -3,6 +3,7 @@ from data import Articles
 import pymysql
 from passlib.hash import pbkdf2_sha256
 from functools import wraps
+from pymongo import MongoClient
 
 app = Flask(__name__)
 
@@ -15,6 +16,13 @@ db_connection = pymysql.connect(
     	db      = 'gangnam',
     	charset = 'utf8'
 )
+
+client = MongoClient("mongodb+srv://root:1234@cluster0.pzy0t.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+db = client.gangnam
+db_user = client.users
+
+list = db.list
+users = db_user.users
 
 # 데코레이터를 붙이는 방법..? 데코레이터 함수를 만든다?
 def is_logged_in(f):
@@ -56,6 +64,7 @@ def register():
         username = request.form["username"]
         email = request.form["email"]
         password = pbkdf2_sha256.hash(request.form["password"])
+        users.insert_one({"username":username, "email":email, "password":password})
         cursor = db_connection.cursor()
 
         sql_1 = f"SELECT * FROM users WHERE email = '{email}'"
@@ -139,7 +148,7 @@ def add_article():
         title = request.form["title"]
         desc = request.form["desc"]
         author = request.form["author"]
-
+        list.insert_one({"title":title, "description":desc, "author":author})
         cursor = db_connection.cursor()
         sql = f"INSERT INTO list (title, description, author) VALUES ('{title}', '{desc}', '{author}');"
         cursor.execute(sql)
