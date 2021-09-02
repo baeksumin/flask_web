@@ -1,7 +1,7 @@
 from flask import Flask, render_template, redirect, request
 from data import Articles
 import pymysql
-from flask_bcrypt import Bcrypt
+from passlib.hash import pbkdf2_sha256
 
 app = Flask(__name__)
 
@@ -32,7 +32,7 @@ def register():
     else:
         username = request.form["username"]
         email = request.form["email"]
-        password = request.form["password"]
+        password = pbkdf2_sha256.hash(request.form["password"])
         cursor = db_connection.cursor()
 
         sql_1 = f"SELECT * FROM users WHERE email = '{email}'"
