@@ -1,7 +1,8 @@
-from flask import Flask, render_template, redirect, request, session
+from flask import Flask, render_template, redirect, request, session, url_for
 from data import Articles
 import pymysql
 from passlib.hash import pbkdf2_sha256
+from functools import wraps
 
 app = Flask(__name__)
 
@@ -15,12 +16,32 @@ db_connection = pymysql.connect(
     	charset = 'utf8'
 )
 
+# 데코레이터를 붙이는 방법..? 데코레이터 함수를 만든다?
+def is_logged_in(f):
+    @wraps(f)
+    def wrap(*args, **kwargs):
+        if 'is_logged' in session:
+            return f(*args, **kwargs)
+        else:
+            return redirect(url_for('login'))   
+    return wrap
+
+def is_admin(f):
+    @wraps(f)
+    def wrap(*args, **kwargs):
+        if session['email'] == '10@naver.com':
+            return f(*args, **kwargs)
+        else:
+            return redirect(url_for('articles'))
+    return wrap
+
 
 @app.route('/hello')
 def hello_world():
     return 'Hello World!'
     
 @app.route('/', methods = ['GET', 'POST'])
+@is_logged_in
 def index():
     name = "KIM"
     print(len(session))
@@ -72,6 +93,7 @@ def login():
                 session['username'] = user[1]
                 session['email'] = user[2]
                 session['date'] = user[4]
+                session['is_logged'] = True
                 print(session)
                 return redirect('/')
             else :
@@ -108,6 +130,7 @@ def detail(ids):
     return render_template('article.html', article = topic, user = session)
 
 @app.route('/add_article', methods = ['GET', 'POST'])
+@is_logged_in
 def add_article():
     if request.method == "GET":
         return render_template('add_article.html', user = session)
@@ -125,6 +148,7 @@ def add_article():
 
 
 @app.route('/edit_article/<ids>', methods = ['GET', 'POST'])
+@is_logged_in
 def edit_article(ids):
     if request.method == 'GET':
         cursor = db_connection.cursor()
@@ -143,10 +167,12 @@ def edit_article(ids):
         sql = f"UPDATE list SET title= '{title}', description = '{desc}', author='{author}' WHERE (id = {int(ids)});"
         cursor.execute(sql)
         db_connection.commit()
-        return redirect('/articles', user = session)
+        return redirect('/articles')
 
     
 @app.route('/delete/<ids>', methods = ['GET', 'POST'])
+@is_logged_in
+@is_admin
 def delete(ids):
     cursor = db_connection.cursor()
     sql = f'DELETE FROM list WHERE (id = {ids});'
